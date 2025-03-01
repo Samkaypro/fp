@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable tailwindcss/classnames-order */
 "use client"
 import Image from "next/image"
 import Link from "next/link"

@@ -106,13 +106,13 @@ export default function Home() {
                   Learn More
                   <ChevronRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
-                <Link
+                {/* <Link
                   href="/"
                   className="group inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-lg font-semibold text-[#F96600] transition-colors duration-300 hover:bg-gray-100"
                 >
                   Submit a Complaint
                   <FileText className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
+                </Link> */}
               </motion.div>
             </div>
           </div>
