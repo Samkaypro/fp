@@ -31,7 +31,7 @@ export function SiteFooter() {
             <p className="opacity-90">
               The Ondo State Public Complaints, Financial Crimes, and Anti-Corruption Commission (SPFACC) is committed to combating financial crimes, ensuring transparency, and promoting accountability in governance.
             </p>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <Link href="/terms" className="text-sm opacity-90 hover:underline">
                 Terms of Use
               </Link>
@@ -39,7 +39,7 @@ export function SiteFooter() {
               <Link href="/privacy" className="text-sm opacity-90 hover:underline">
                 Privacy Policy
               </Link>
-            </div>
+            </div> */}
           </div>
 
           {/* Useful Links */}
