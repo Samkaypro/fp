@@ -4,30 +4,20 @@ import("./env.mjs");
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  runtime: 'nodejs',
-  // output: "export",
+
   images: {
     remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "avatars.githubusercontent.com",
-      },
-      {
-        protocol: "https",
-        hostname: "lh3.googleusercontent.com",
-      },
-      {
-        protocol: "https",
-        hostname: "randomuser.me",
-      },
-      {
-        protocol: "https",
-        hostname: "utfs.io",
-      },
+      { protocol: "https", hostname: "avatars.githubusercontent.com" },
+      { protocol: "https", hostname: "lh3.googleusercontent.com" },
+      { protocol: "https", hostname: "randomuser.me" },
+      { protocol: "https", hostname: "utfs.io" },
     ],
   },
+
   experimental: {
+    appDir: false, // Disables Edge runtime in the App Router
     serverComponentsExternalPackages: ["@prisma/client"],
+    runtime: "nodejs",
   },
 };
 
