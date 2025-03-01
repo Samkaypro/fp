@@ -1,20 +1,21 @@
-
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable tailwindcss/classnames-order */
 "use client"
 
 import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import { ChevronRight, Phone, Mail, MapPin, FileText, Shield, Scale } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 import About from "./about"
 import HomeGallerySection from "./photo"
 
 const carouselImages = [
-    "/_static/images/hero.jpg",
-    "/_static/images/pics/3.jpg",
-    "/_static/images/pics/6.jpg",
-    "/_static/images/pics/2.jpg",
-    "/_static/images/pics/11.jpg",
+  "/_static/images/hero.jpg",
+  "/_static/images/pics/3.jpg",
+  "/_static/images/pics/6.jpg",
+  "/_static/images/pics/2.jpg",
+  "/_static/images/pics/11.jpg",
 ]
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -38,7 +39,7 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-br from-white to-orange-50">
       <div
         ref={carouselRef}
-        className="relative h-screen overflow-hidden"
+        className="relative h-[60vh] md:h-[80vh] lg:h-screen overflow-hidden"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -54,9 +55,11 @@ export default function Home() {
             <Image
               src={carouselImages[currentSlide] || "/placeholder.svg"}
               alt={`Carousel image ${currentSlide + 1}`}
-              layout="fill"
-              objectFit="cover"
+              fill
+              sizes="100vw"
+              className="object-cover object-center"
               quality={100}
+              priority={currentSlide === 0}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
           </motion.div>
@@ -76,9 +79,9 @@ export default function Home() {
 
         <div className="absolute inset-0 flex items-center">
           <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="max-w-2xl lg:ml-0">
+            <div className="max-w-xl md:max-w-2xl lg:ml-0">
               <motion.h1
-                className="mb-6 text-4xl font-bold text-white sm:text-5xl md:text-6xl"
+                className="mb-4 text-2xl font-bold text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
@@ -86,7 +89,7 @@ export default function Home() {
                 Ondo State Public Complaints, Financial Crimes and Anti-Corruption Commission
               </motion.h1>
               <motion.p
-                className="mb-8 text-xl text-white/90 sm:text-2xl"
+                className="mb-6 text-base text-white/90 sm:text-lg md:text-xl lg:text-2xl"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.7, duration: 0.8 }}
@@ -101,25 +104,17 @@ export default function Home() {
               >
                 <Link
                   href="/about"
-                  className="group inline-flex items-center justify-center rounded-full bg-[#F96600] px-8 py-3 text-lg font-semibold text-white transition-colors duration-300 hover:bg-[#FF7F00]"
+                  className="group inline-flex items-center justify-center rounded-full bg-[#F96600] px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-semibold text-white transition-colors duration-300 hover:bg-[#FF7F00]"
                 >
                   Learn More
                   <ChevronRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
-                {/* <Link
-                  href="/"
-                  className="group inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-lg font-semibold text-[#F96600] transition-colors duration-300 hover:bg-gray-100"
-                >
-                  Submit a Complaint
-                  <FileText className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-                </Link> */}
               </motion.div>
             </div>
           </div>
         </div>
       </div>
       <About />
-
 
       {/* <section className="px-4 py-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
@@ -230,7 +225,6 @@ export default function Home() {
       <section className="px-4 py-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mb-16 text-center">
-           
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Our Mission</h2>
             <p className="mt-4 text-gray-600">Working towards a corruption-free Ondo State</p>
           </div>
@@ -298,8 +292,6 @@ export default function Home() {
         </div>
       </section> */}
 
-      
-
       {/* <section className="bg-gradient-to-br from-orange-50 to-orange-100 px-4 py-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mb-16 text-center">
@@ -345,5 +337,4 @@ export default function Home() {
     </main>
   )
 }
-
 
