@@ -5,10 +5,10 @@ const footerLinks = [
   {
     title: "Useful Links",
     links: [
-      { name: "Mission", href: "/mission" },
-      { name: "How It Works", href: "/how-it-works" },
-      { name: "Core Values", href: "/core-values" },
-      { name: "Register", href: "/register" },
+      { name: "About", href: "/about" },
+      { name: "Photo Gallery", href: "/info/gallery" },
+      { name: "Board Members", href: "/about/board" },
+      { name: "Structure", href: "/about/structure" },
     ],
   },
 ]

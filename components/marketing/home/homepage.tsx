@@ -7,6 +7,7 @@ import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronRight, Phone, Mail, MapPin, FileText, Shield, Scale } from "lucide-react"
 import About from "./about"
+import HomeGallerySection from "./photo"
 
 const carouselImages = [
     "/_static/images/hero.jpg",
@@ -331,6 +332,7 @@ export default function Home() {
           </div>
         </div>
       </section> */}
+      <HomeGallerySection />
 
       {/* <footer className="bg-[#F96600] px-4 py-8 text-white sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl text-center">

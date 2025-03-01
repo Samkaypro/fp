@@ -126,7 +126,7 @@ export function NavBar() {
             </Link>
           ) : status === "unauthenticated" ? (
             <Button size="sm" className="bg-[#F96600] text-white hover:bg-[#F96600]/90" onClick={() => {}}>
-              Sign In
+              SPFACC
             </Button>
           ) : (
             <Skeleton className="h-9 w-20 bg-[#F96600]" />
