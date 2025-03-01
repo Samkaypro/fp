@@ -16,7 +16,7 @@ const nextConfig = {
 
   experimental: {
     appDir: false, // Disables Edge runtime in the App Router
-    serverComponentsExternalPackages: ["@prisma/client"],
+    //serverComponentsExternalPackages: ["@prisma/client"],
     runtime: "nodejs",
   },
 };
