@@ -20,8 +20,8 @@ export default function About() {
           <div className="mb-12">
             <h2 className="mb-4 text-2xl font-bold text-gray-800">Introduction</h2>
             <p className="mb-4 text-lg text-gray-700">
-              The <strong>Ondo State Public Complaints, Financial Crimes, and Anti-Corruption Commission (SPFACC)</strong> 
-              was established in 2022 to resolve public complaints address economic and financial misconduct and promote transparency and uphold accountability in a conduct of government bussiness
+              The <strong>Ondo State Public Complaints, Financial Crimes, and Anti-Corruption Commission (SPFACC) </strong>  
+               was established in 2022 to resolve public complaints address economic and financial misconduct and promote transparency and uphold accountability in a conduct of government bussiness
             </p>
             <p className="text-lg text-gray-700">
               Inaugurated on  the <strong>7<sup>th</sup> of March 2023</strong>, the Commission is led by  
