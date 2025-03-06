@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable tailwindcss/classnames-order */
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
@@ -31,8 +33,9 @@ export function BoardMemberCard({ id, name, credentials, position, image }: Boar
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         </div>
         <div className="p-4 text-center">
-          <h3 className="text-lg font-semibold text-gray-900">
+          <h3 className="text-xl font-semibold text-gray-900">
             {name}
+            <br />
             {credentials && <span className="ml-2 text-[#F96600]">{credentials}</span>}
           </h3>
           <p className="mt-1 text-gray-600">{position}</p>

@@ -65,7 +65,7 @@ export function SiteFooter() {
             <div className="space-y-4">
               <div className="flex items-center gap-2 opacity-90">
                 <Phone className="size-5" />
-                <span>+234 707 124 9966</span>
+                <span>+234 803 502 5879</span>
               </div>
               <div className="flex items-start gap-2 opacity-90">
                 <MapPin className="size-5 shrink-0" />

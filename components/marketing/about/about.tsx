@@ -21,12 +21,11 @@ export default function About() {
             <h2 className="mb-4 text-2xl font-bold text-gray-800">Introduction</h2>
             <p className="mb-4 text-lg text-gray-700">
               The <strong>Ondo State Public Complaints, Financial Crimes, and Anti-Corruption Commission (SPFACC)</strong> 
-              was established in 2022 to address financial misconduct, promote transparency, and uphold accountability 
-              within government operations.
+              was established in 2022 to resolve public complaints address economic and financial misconduct and promote transparency and uphold accountability in a conduct of government bussiness
             </p>
             <p className="text-lg text-gray-700">
-              Inaugurated on <strong>March 7, 2023</strong>, the Commission is led by 
-              <strong>Hon. Justice W. A. Akintoroye (Rtd)</strong> as Chairman and <strong>Prof. Adewole Adeyeye</strong> as Secretary.
+              Inaugurated on  the <strong>7<sup>th</sup> of March 2023</strong>, the Commission is led by  
+              <strong> Hon. Justice W. A. Akintoroye (Rtd)</strong> as Chairman and <strong>Prof. Adewole Adeyeye</strong> as Secretary to the commission.
             </p>
           </div>
 
@@ -34,8 +33,8 @@ export default function About() {
           <div className="mb-12">
             <h2 className="mb-4 text-2xl font-bold text-gray-800">Mission & Objectives</h2>
             <ul className="list-inside list-disc space-y-2 text-lg text-gray-700">
+             <li>Resolve public complaints through enlightenment, conflict resolution arbitration and enforcement</li> 
               <li>Investigate financial crimes, corruption, and abuse of office</li>
-              <li>Resolve public complaints through enlightenment and enforcement</li>
               <li>Enhance transparency and accountability in governance</li>
               <li>Recover misappropriated public funds and assets</li>
             </ul>

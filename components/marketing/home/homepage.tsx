@@ -11,9 +11,9 @@ import About from "./about"
 import HomeGallerySection from "./photo"
 
 const carouselImages = [
+  "/_static/images/pics/6.jpg",
   "/_static/images/hero.jpg",
   "/_static/images/pics/3.jpg",
-  "/_static/images/pics/6.jpg",
   "/_static/images/pics/2.jpg",
   "/_static/images/pics/11.jpg",
 ]
@@ -86,7 +86,7 @@ export default function Home() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                Ondo State Public Complaints, Financial Crimes and Anti-Corruption Commission
+                Ondo State Public Complaints, Financial Crime and Anti-Corruption Commission
               </motion.h1>
               <motion.p
                 className="mb-6 text-base text-white/90 sm:text-lg md:text-xl lg:text-2xl"
@@ -182,9 +182,7 @@ export default function Home() {
             >
               <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Mission Statement</h2>
               <p className="text-lg leading-relaxed text-gray-600">
-                Create a corruption free society in building a prosperous Ondo State through investigation of financial
-                crimes and corruption practices, resolving public complaints through enlightenment, prevention and
-                enforcement.
+               The Commission will use well-structured supervision; lawful enforcement of laws, regulations and guidelines; and public sensitization and orientation to combat all forms of official improprieties, financial crimes and corrupt practices in Ondo State. 
               </p>
             </motion.div>
           </div>
@@ -199,8 +197,7 @@ export default function Home() {
             >
               <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Vision Statement</h2>
               <p className="text-lg leading-relaxed text-gray-600">
-                To be a leading anti-corruption agency in Nigeria, fostering transparency, accountability, and integrity
-                in public service while ensuring justice and fairness for all citizens of Ondo State.
+              Our vision is to be a leading internationally recognized public anti-corruption organization, leading Ondo State to an enviable public ethical atmosphere, guided by the principles of accountability and probity; devoid of all forms of corruption and sharp practices.
               </p>
             </motion.div>
             <motion.div
@@ -211,7 +208,7 @@ export default function Home() {
               className="relative order-1 overflow-hidden rounded-3xl shadow-2xl lg:order-2"
             >
               <Image
-                src="/_static/images/pics/16.jpg"
+                src="/_static/images/pics/3/12.jpg"
                 alt="SPFACC officers monitoring activities"
                 width={600}
                 height={600}
