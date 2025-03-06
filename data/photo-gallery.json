@@ -20,10 +20,10 @@
     {
       "id": "ibadan-visit",
       "categoryId": "official-visits",
-      "title": "Members of SPFACC on a Study Visit to the Commission",
+      "title": "Members of SPFACC on a Study/Exchange Visit to  OYO Stata Anti Corruption Agency (OYACA) Ibadan",
       "date": "2025-02-12",
       "author": "Admin",
-      "description": "Network Visit to OYO State ICPC",
+      "description": "Members of SPFACC on a Study/Exchange Visit to  OYO Stata Anti Corruption Agency (OYACA) Ibadan",
       "coverImage": "/_static/images/pics/1/1.jpg",
       "images": [
         {
@@ -61,7 +61,7 @@
     {
       "id": "workshop",
       "categoryId": "public-events",
-      "title": "One day colloquium on ondo state public complaints and financial crime anti-corruption commission",
+      "title": "One day Colloquium on Ondo State public complaints and financial crime anti-corruption commission",
       "date": "2024-12-02",
       "author": "Admin",
       "description": "One day colloquium on ondo state public complaints and financial crime anti-corruption commission",
@@ -151,8 +151,6 @@
           "caption": "",
           "alt": ""
         }
-       
-        
       ]
     },
 
@@ -200,7 +198,7 @@
       "date": "2024-09-16",
       "author": "Admin",
       "description": "Capacity building workshop of anti- corruption for officials and stakeholders of local government across Ondo state",
-      "coverImage": "/_static/images/pics/5/1.jpg",
+      "coverImage": "/_static/images/pics/5/5.jpg",
       "images": [
         {
           "id": "1",
@@ -255,7 +253,7 @@
       "date": "2024-09-16",
       "author": "Admin",
       "description": "SPFACC Officials monitoring the local government election against vote buying and selling",
-      "coverImage": "/_static/images/pics/7/10.jpg",
+      "coverImage": "/_static/images/pics/7/16.jpg",
       "images": [
         {
           "id": "1",

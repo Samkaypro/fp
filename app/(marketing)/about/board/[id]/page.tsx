@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable tailwindcss/classnames-order */
 import { promises as fs } from "fs"
 import path from "path"
 import Image from "next/image"
@@ -9,13 +11,12 @@ async function getBoardMember(id: string) {
   const filePath = path.join(process.cwd(), "data/board-members.json")
   const fileContents = await fs.readFile(filePath, "utf8")
   const data = JSON.parse(fileContents)
-  const member = data.members.find((m: any) => m.id === id)
+  const member = data.members.find((m: any) => m.id === id) || data.management.find((m: any) => m.id === id)
 
-  console.log(member)
   if (!member) {
     notFound()
   }
-console.log("textt")
+
   return member
 }
 
@@ -45,9 +46,9 @@ export default async function BoardMemberPage({ params }: { params: { id: string
               <div className="mt-6 text-center">
                 <h1 className="text-3xl font-bold text-gray-900">
                   {member.name}
-                  {member.credentials && <span className="ml-2 text-[#F96600]">{member.credentials}</span>}
                 </h1>
-                <p className="mt-2 text-xl text-gray-600">{member.position}</p>
+                <h3>{member.credentials && <span className="ml-2 text-[#F96600]">{member.credentials}</span>}</h3>
+                <p className="text-xl text-gray-600">{member.position}</p>
               </div>
             </div>
           </div>
